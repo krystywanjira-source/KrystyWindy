@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windsurf - The Most Powerful AI Code Editor</title>
+    <meta name="description" content="Discover Windsurf, the revolutionary AI-powered code editor with Cascade technology. Built for developers who want to stay in flow state.">
+    <meta property="og:title" content="Windsurf - The Most Powerful AI Code Editor">
+    <meta property="og:description" content="The first AI-native IDE that keeps developers in flow. Explore Cascade, Supercomplete, Turbo Mode, MCP, Live Previews, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://windsurf.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Windsurf - The Most Powerful AI Code Editor">
+    <meta name="twitter:description" content="Tomorrow's editor, today. Keep your flow with Cascade and AI-native workflows.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-wind"></i>
+                <span>Windsurf</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#cascade" class="nav-link">Cascade</a>
+                <a href="#history" class="nav-link">History</a>
+                <a href="#stats" class="nav-link">Stats</a>
+            </div>
+            <div class="nav-cta">
+                <button class="btn-primary" id="btn-download-nav">Download Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-text">🚀 GPT-5 is now available!</span>
+            </div>
+            <h1 class="hero-title">
+                The Most Powerful
+                <span class="gradient-text">AI Code Editor</span>
+                Ever Built
+            </h1>
+            <p class="hero-subtitle">
+                Windsurf Editor is the first AI-native IDE that keeps developers in flow state. 
+                Experience coding that feels like literal magic with Cascade technology.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">70M+</span>
+                    <span class="stat-label">Lines of AI Code Daily</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">94%</span>
+                    <span class="stat-label">Code Written by AI</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <button class="btn-primary btn-large" id="btn-download-hero">
+                    <i class="fas fa-download"></i>
+                    Download Windsurf
+                </button>
+                <button class="btn-secondary btn-large" id="btn-demo-hero">
+                    <i class="fas fa-play"></i>
+                    Watch Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">One Editor. Unlimited Superpowers.</h2>
+                <p class="section-subtitle">Discover the revolutionary features that make Windsurf the ultimate AI coding companion</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Memories</h3>
+                    <p>Cascade remembers important things about your codebase and workflow, providing contextual assistance that gets smarter over time.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Supercomplete</h3>
+                    <p>Advanced autocomplete that predicts not just your next code snippet, but your next action, keeping you in perfect flow state.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Lint Fixing</h3>
+                    <p>Cascade automatically detects and fixes lint errors that it generates, ensuring clean, production-ready code every time.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>MCP Support</h3>
+                    <p>Enhance your AI workflows by connecting custom tools and services. Access curated MCP servers with one-click setup.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Drag & Drop Images</h3>
+                    <p>Build your designs instantly by dropping an image into Cascade. Transform mockups into working code effortlessly.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Terminal Command</h3>
+                    <p>Don't remember a terminal command? Just ⌘+I in terminal to stay in flow and let AI help you with natural language commands.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Live Previews</h3>
+                    <p>See your website live in the IDE, click on any element, and let Cascade reshape it instantly—exactly how you want.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Turbo Mode</h3>
+                    <p>Enable Turbo mode to allow Cascade to auto-execute terminal commands, dramatically accelerating your development workflow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cascade Section -->
+    <section id="cascade" class="cascade">
+        <div class="container">
+            <div class="cascade-content">
+                <div class="cascade-text">
+                    <h2 class="section-title">Meet Cascade</h2>
+                    <p class="cascade-description">
+                        Cascade combines deep codebase understanding, a breadth of advanced tools, and real-time awareness 
+                        of your actions into a powerful, seamless, and collaborative flow. It's the most powerful way to code with AI.
+                    </p>
+                    
+                    <div class="cascade-features">
+                        <div class="cascade-feature">
+                            <div class="cascade-feature-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="cascade-feature-content">
+                                <h4>Full Contextual Awareness</h4>
+                                <p>Deep contextual awareness allows you to run Cascade on production codebases and still get relevant suggestions.</p>
+                            </div>
+                        </div>
+
+                        <div class="cascade-feature">
+                            <div class="cascade-feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="cascade-feature-content">
+                                <h4>@ Mentions</h4>
+                                <p>Refer to your functions, classes, files, or entire directories to guide Cascade to relevant context.</p>
+                            </div>
+                        </div>
+
+                        <div class="cascade-feature">
+                            <div class="cascade-feature-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="cascade-feature-content">
+                                <h4>Continue My Work</h4>
+                                <p>Cascade keeps track of your actions so you can just tell it to continue what you're doing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cascade-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <span class="code-title">Cascade AI Assistant</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="code-prompt">></span>
+                                <span class="code-text typing-animation">Building your React component...</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-comment">// Analyzing codebase structure</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-comment">// Applying best practices</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-comment">// Generating optimized code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="history">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Windsurf Story</h2>
+                <p class="section-subtitle">From vision to revolution: How Windsurf became the world's most advanced AI code editor</p>
+            </div>
+            
+            <div class="history-content">
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>The Beginning: Codeium Era</h3>
+                            <p>Windsurf began its journey as Codeium, founded by visionary entrepreneurs Varun Mohan and Anshul Agarwal. The company started with a mission to democratize AI-powered coding tools, recognizing that the combination of recent advances in generative models and world-class optimized deep learning serving software could provide users with top-quality AI-based products at the lowest possible costs—or ideally, free!</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>The Pivot: Embracing Generative AI</h3>
+                            <p>The team made a bold decision to "bet the company" on a pivot when they realized generative AI would commoditize their infrastructure offering. This strategic pivot led them to abandon a profitable business model to focus entirely on building the future of AI-powered development environments. The decision proved prescient as the AI coding revolution began to unfold.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Birth of Windsurf Editor</h3>
+                            <p>The team developed the Windsurf Editor as the first AI-native IDE, designed from the ground up to keep developers in flow state. Unlike traditional editors with AI bolted on, Windsurf was purpose-built to harness the magic of AI coding. The editor introduced revolutionary concepts like Cascade technology, which combines deep codebase understanding with real-time awareness of developer actions.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Explosive Growth</h3>
+                            <p>Windsurf achieved remarkable growth, reaching over 1 million developers in just four months after launch. The platform now serves 70+ million lines of AI-generated code daily, with 94% of code being written by AI. This unprecedented adoption rate demonstrated the product-market fit and validated the team's vision of AI-first development environments.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Enterprise Adoption</h3>
+                            <p>Windsurf quickly gained traction in the enterprise market, with 4,000+ enterprise customers and 59% of Fortune 500 companies building with Windsurf. The platform's advanced context-awareness engine grounds AI-generated suggestions in existing codebases, reducing hallucinations and ensuring adherence to syntax, semantics, and organizational coding standards—critical capabilities for enterprise adoption.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Acquisition by Cognition</h3>
+                            <p>In July 2025, Windsurf was acquired by Cognition, marking a significant milestone in the company's journey. The acquisition was positioned as "The Next Chapter" for Windsurf, with leadership emphasizing their continued commitment to the platform and its users. This partnership brought additional resources and expertise to accelerate Windsurf's mission of empowering developers worldwide.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Cutting-Edge Innovation</h3>
+                            <p>Windsurf continues to push the boundaries of AI-powered development with features like GPT-5 integration, Model Context Protocol (MCP) support, Turbo Mode for auto-execution, and advanced preview capabilities. The platform's unique approach to training on incomplete code states creates competitive moats that even companies with better base models struggle to cross, establishing Windsurf as the definitive leader in AI coding assistance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="history-details">
+                    <div class="detail-card">
+                        <h4>Technical Innovation</h4>
+                        <p>Windsurf's technical architecture represents a breakthrough in AI-powered development environments. The Cascade system doesn't just provide autocomplete—it maintains deep contextual awareness of your entire codebase, remembers your workflow patterns, and can predict not just your next line of code, but your next action. This level of integration creates a development experience that feels truly magical.</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4>Philosophy & Mission</h4>
+                        <p>The Windsurf team operates under the philosophy that "individuals have not hit the limits of their potential, and groups of individuals are even farther from their potential." Their mission is to do the hard work to deliver working products that empower everyone to continuously dream bigger, even in the most complex scenarios. This vision drives every feature and decision in the platform.</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4>Privacy-First Approach</h4>
+                        <p>From its inception, Windsurf has maintained a privacy-first approach with no training on non-permissive data, encryption in transit, and optional zero-day retention policies. This commitment to privacy has been crucial for enterprise adoption and developer trust, setting Windsurf apart from competitors who may compromise on data protection.</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4>Community Impact</h4>
+                        <p>Windsurf has fundamentally changed how developers approach coding. By handling 94% of code generation, the platform allows developers to focus on creative problem-solving and high-level architecture rather than boilerplate and menial tasks. This shift has increased the ROI of engineering investments and enabled smaller teams to accomplish what previously required much larger development organizations.</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4>Future Vision</h4>
+                        <p>Looking ahead, Windsurf continues to invest heavily in R&D, with a focus on making AI tools that increase rather than replace human potential. The team believes that high-performing companies will hire more engineers, not fewer, as AI tools increase the ROI of engineering investment. Their goal is to create a future where every individual and organization can dream bigger and achieve more through AI-augmented development.</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h4>Competitive Advantage</h4>
+                        <p>Windsurf's unique competitive advantage lies in its training on incomplete code states—data that other AI coding assistants don't have access to. This unique dataset, combined with their purpose-built IDE architecture and deep integration philosophy, creates moats that are difficult for competitors to cross, even those with superior base models. The result is an AI coding experience that is unmatched in the industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted by Developers. Proven in Enterprises.</h2>
+                <p class="section-subtitle">The numbers speak for themselves</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="1000000">0</div>
+                    <div class="stat-label">Active Users</div>
+                    <div class="stat-description">Trusted by over a million innovators, creators, and teams worldwide</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="stat-number" data-target="4000">0</div>
+                    <div class="stat-label">Enterprise Customers</div>
+                    <div class="stat-description">Trusted by startups, agencies, and enterprises worldwide</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-number" data-target="70000000">0</div>
+                    <div class="stat-label">Lines of Code Daily</div>
+                    <div class="stat-description">Generated by AI every single day across all projects</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="stat-number" data-target="94">0</div>
+                    <div class="stat-label">% Code by AI</div>
+                    <div class="stat-description">AI removes boilerplate so you focus on creative work</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-number" data-target="59">0</div>
+                    <div class="stat-label">% Fortune 500</div>
+                    <div class="stat-description">Fortune 500 companies building with Windsurf</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Months to 1M Users</div>
+                    <div class="stat-description">Fastest growing AI code editor in history</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience the Future of Coding?</h2>
+                <p>Join over 1 million developers who have already discovered the magic of AI-powered development with Windsurf.</p>
+                <div class="cta-actions">
+                    <button class="btn-primary btn-large" id="btn-download-cta">
+                        <i class="fas fa-download"></i>
+                        Download Windsurf Now
+                    </button>
+                    <button class="btn-secondary btn-large" id="btn-visit-site">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visit windsurf.com
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-wind"></i>
+                        <span>Windsurf</span>
+                    </div>
+                    <p>The most powerful AI code editor ever built. Empowering developers to dream bigger and build faster.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Cascade</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Windsurf. All rights reserved. Built with ❤️ for developers worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
