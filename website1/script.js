@@ -12,17 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar scroll effect
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-    } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = 'none';
-    }
-});
+// Navbar scroll effect handled in throttled scroll below
 
 // Animated counter for stats
 function animateCounter(element, target, duration = 2000) {
@@ -238,6 +228,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const demoHero = document.getElementById('btn-demo-hero');
     const visitSite = document.getElementById('btn-visit-site');
 
+    // Demo disclaimer banner: show/hide with persistence
+    const disclaimer = document.getElementById('demo-disclaimer');
+    const dismissBtn = document.getElementById('dismiss-disclaimer');
+    const DISMISS_KEY = 'demoDisclaimerDismissed';
+    try {
+        if (localStorage.getItem(DISMISS_KEY) === 'true' && disclaimer) {
+            disclaimer.style.display = 'none';
+        }
+    } catch (_) { /* ignore storage errors */ }
+    if (dismissBtn && disclaimer) {
+        dismissBtn.addEventListener('click', () => {
+            disclaimer.style.display = 'none';
+            try { localStorage.setItem(DISMISS_KEY, 'true'); } catch (_) {}
+        });
+    }
+
     const downloadUrl = 'https://windsurf.com/editor/download';
     const demoUrl = 'https://windsurf.com/editor';
     const siteUrl = 'https://windsurf.com/';
@@ -248,13 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     demoHero && demoHero.addEventListener('click', () => openInNewTab(demoUrl));
     visitSite && visitSite.addEventListener('click', () => openInNewTab(siteUrl));
 
-    // Add loading animation to page
-    document.body.style.opacity = '0';
-    document.body.style.transition = 'opacity 0.5s ease';
-
-    setTimeout(() => {
-        document.body.style.opacity = '1';
-    }, 100);
+    // Removed body fade-in to prevent flashing/pop-in
 });
 
 // Scroll-triggered animations for timeline
